@@ -1,0 +1,13 @@
+class ExampleController extends \yii\console\Controller
+{
+    // Команда "yii example/create test" вызовет "actionCreate('test')"
+    public function actionCreate($name) { ... }
+
+    // Команда "yii example/index city" вызовет "actionIndex('city', 'name')"
+    // Команда "yii example/index city id" вызовет "actionIndex('city', 'id')"
+    public function actionIndex($category, $order = 'name') { ... }
+
+    // Команда "yii example/add test" вызовет "actionAdd(['test'])"
+    // Команда "yii example/add test1,test2" вызовет "actionAdd(['test1', 'test2'])"
+    public function actionAdd(array $name) { ... }
+}
